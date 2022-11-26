@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+    
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Bartle Test Japanese</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <div style="text-align: center">
+        <h1 id="logo"><img src="images/Title.png" alt="BartleTestForm"></a></h1>
+      </div>
+    </header>
+    <form class="example">
+      <table border="1">
+<p>バートルテストはゲームプレイヤーがどのようにゲームをプレイするのかに関して、主にオンラインゲームを対象に作成された
+  アンケートです。ゲーム研究者のバートル博士が発表した論文<a href="http://mud.co.uk/richard/hcds.htm" target="_blank">Bartle's taxonomy of player types</a>
+  を元に作成したものであり、当質問フォームはゲーム研究者のマシュー博士が作成したアンケート<a href="http://matthewbarr.co.uk/bartle/" target="_blank">Take the Bartle test</a>
+  を参考にして、日本人のオンラインゲームの使用環境を考慮して作成しました。
+  ※アンケートでは、必ずどちらかを選択してください。最適な選択肢がない場合はどちらか自身の感覚により近い選択肢を選んでください。
+  
+</p>
+<!--
+<legend>名前とメールアドレスを入力してください。メールアドレスは大学で利用しているアドレスを入力してください。</legend>
+
+<label>名前：<input type="text" required name="username"></label>
+<label for="mail">&nbsp;&nbsp;メール：</label>
+<input id="mail" type="email" required name="mail">
+-->
+      </table>
+    </form>
+<div class="choose_box">
+    <!-- 質問一覧 -->
+    <div class="app-theme">
+      <p>バートルテストのアンケートフォームです。（全３０問）</p>
+    </div>
+
+     <div id="q_1" class="fit">
+        <p>問１：ゲーム体験として、どちらがより楽しいと感じますか？　</p>
+        <ul>
+          <li><a class="btn" href="#q_2" data-value="a">
+            より大きいモンスターを倒す</a></li>
+          <li><a class="btn" href="#q_2" data-value="s">
+            友人とゲームに関する話題を共有する</a></li>
+        </ul>
+      </div>
+
+      <!-- 質問2 -->
+      <div id="q_2" style="display: none;">
+        <p>問２：ゲーム体験として、どちらがより楽しいクエスト（ゲーム上で与えられるタスク）ですか？</p>
+        <ul>
+          <li><a class="btn" href="#q_3" data-value="s">ストーリーの進行に関するクエスト</a></li>
+          <li><a class="btn" href="#q_3" data-value="a">最後に報酬がもらえるクエスト</a></li>
+        </ul>
+      </div>
+
+      <!-- 質問3 -->
+      <div id="q_3" style="display: none;">
+        <p>問３：　オンラインゲームで、あなたが注目を集めるとしたらどちらが良いですか？</p>
+        <ul>
+          <li><a class="btn" href="#q_4" data-value="a">使っている装備や称号</a></li>
+          <li><a class="btn" href="#q_4" data-value="s">あなたの人柄</a></li>
+        </ul>
+      </div>
+      <!-- 質問4 -->
+      <div id="q_4" style="display: none;">
+        <p>問４：オンラインゲームで、より楽しいと感じるのはどちらですか？</p>
+        <ul>
+          <li><a class="btn" href="#q_5" data-value="s">最新の噂などの情報を共有する</a></li>
+          <li><a class="btn" href="#q_5" data-value="a">新しい装備を手に入れる</a></li>
+        </ul>
+      </div>
+
+      <!-- 質問5 -->
+      <div id="q_5" style="display: none;">
+        <p>問５：オンラインゲームではどちらを重視しますか？</p>
+        <ul>
+          <li><a class="btn" href="#q_6" data-value="s">プライベートな環境（フレンド専用チャットなど）でのコミュニケーション </a></li>
+          <li><a class="btn" href="#q_6" data-value="a">自分の拠点や、より価値の高い報酬</a></li>
+        </ul>
+      </div>
+
+ <!-- 質問6 -->
+ <div id="q_6" style="display: none;">
+  <p>問６：オンラインゲームではどちらをより楽しみたいですか？</p>
+  <ul>
+    <li><a class="btn" href="#q_7" data-value="s">ギルドなどのチームを作り協働して楽しむ</a></li>
+    <li><a class="btn" href="#q_7" data-value="e">マップを探索し、未踏領域を踏破する</a></li>
+  </ul>
+</div>
+
+<!-- 質問7 -->
+<div id="q_7" style="display: none;">
+  <p>問７：オンラインゲームで、より重視する要素はどちらですか？</p>
+  <ul>
+    <li><a class="btn" href="#q_8" data-value="a">一緒に遊べるユーザー数</a></li>
+    <li><a class="btn" href="#q_8" data-value="e">探索できるマップの数</a></li>
+  </ul>
+</div>
+<!-- 質問8 -->
+<div id="q_8" style="display: none;">
+  <p>問８：ゲーム体験で、より重視する要素はどちらですか？</p>
+  <ul>
+    <li><a class="btn" href="#q_9" data-value="s">ゲーム内でのロールプレイ要素（人狼ゲームなどの駆け引きも含む）</a></li>
+    <li><a class="btn" href="#q_9" data-value="e">他にはないユニークな特徴やゲームの仕組み（裏技や隠し要素も含む）</a></li>
+  </ul>
+</div>
+
+<!-- 質問9 -->
+<div id="q_9" style="display: none;">
+  <p>問９：オンラインゲームであなたは非常に強いドラゴンと戦うとしたらどのように挑戦しますか？</p>
+  <ul>
+    <li><a class="btn" href="#q_10" data-value="s">多くのプレイヤーが参加するグループで戦う </a></li>
+    <li><a class="btn" href="#q_10" data-value="e">様々な武器や魔法などを駆使して弱点を見つけ出すまで挑み続ける</a></li>
+  </ul>
+</div>
+
+<!-- 質問10 -->
+<div id="q_10" style="display: none;">
+  <p>問１０：オンラインゲームで未知のダンジョンを探索しようとしています。<br>
+    もう一人誰かを誘うとしたら誰を誘いますか？</p>
+  <ul>
+    <li><a class="btn" href="#q_11" data-value="s">あなたや友人を楽しませてくれる自分の友人</a></li>
+    <li><a class="btn" href="#q_11" data-value="e">隠されたルートやアイテムを見つけ出せるサポート役</a></li>
+  </ul>
+</div>
+
+<!-- 質問11 -->
+<div id="q_11" style="display: none;">
+  <p>問１１：　オンラインゲームで、だれかがあなたをPK（プレイヤーがプレイヤーを倒すこと）しました。
+    <br>あなたはその後どうしますか？</p>
+  <ul>
+    <li><a class="btn" href="#q_12" data-value="s">なぜなのか理由を見つけ、しないでほしいと交渉する</a></li>
+    <li><a class="btn" href="#q_12" data-value="k">やり返すために相手に対して PK 仕返す</a></li>
+  </ul>
+</div>
+
+<!-- 質問12 -->
+<div id="q_12" style="display: none;">
+  <p>問１２：より興奮するのはどちらですか？</p>
+  <ul>
+    <li><a class="btn" href="#q_13" data-value="s">よく演じられたシナリオ</a></li>
+    <li><a class="btn" href="#q_13" data-value="k">本気になれる戦い</a></li>
+  </ul>
+</div>
+<!-- 質問13 -->
+<div id="q_13" style="display: none;">
+  <p>問１３：どちらのほうが楽しいですか？</p>
+  <ul>
+    <li><a class="btn" href="#q_14" data-value="k">他のプレイヤーと戦って対人戦で勝つ体験</a></li>
+    <li><a class="btn" href="#q_14" data-value="s">他のプレイヤーが所属するグループに加入して仲間を作る体験</a></li>
+  </ul>
+</div>
+
+<!-- 質問14 -->
+<div id="q_14" style="display: none;">
+  <p>問１４：最悪なのは？</p>
+  <ul>
+    <li><a class="btn" href="#q_15" data-value="k">力を失うこと </a></li>
+    <li><a class="btn" href="#q_15" data-value="s">友人がいなくなること</a></li>
+  </ul>
+</div>
+
+<!-- 質問15 -->
+<div id="q_15" style="display: none;">
+  <p>問１５：どちらかといえば好きなのは</p>
+  <ul>
+    <li><a class="btn" href="#q_16" data-value="s">人の話を聞くこと</a></li>
+    <li><a class="btn" href="#q_16" data-value="k">能力により自分の優位を示すこと</a></li>
+  </ul>
+</div>
+
+<!-- 質問16 -->
+<div id="q_16" style="display: none;">
+  <p>問１６：ゲームで新しいエリアが開放された。なんのために行動する？</p>
+  <ul>
+    <li><a class="btn" href="#q_17" data-value="e">新しいエリアを探索して、隠された歴史や秘密を見つけ出す </a></li>
+    <li><a class="btn" href="#q_17" data-value="a">いち早く新しい装備や設備を手に入れる</a></li>
+  </ul>
+</div>
+
+<!-- 質問17 -->
+<div id="q_17" style="display: none;">
+  <p>問１７：どちらかといえばあなたは次のように思われたい</p>
+  <ul>
+    <li><a class="btn" href="#q_18" data-value="e">様々な要素を知り、探究しているひと</a></li>
+    <li><a class="btn" href="#q_18" data-value="a">優れた人で、ユニークな能力を持っている</a></li>
+  </ul>
+</div>
+<!-- 質問18 -->
+<div id="q_18" style="display: none;">
+  <p>問１８：どちらかといえばあなたは</p>
+  <ul>
+    <li><a class="btn" href="#q_19" data-value="a">友人より早くクリアする</a></li>
+    <li><a class="btn" href="#q_19" data-value="e">友人より多くの秘密を知っている</a></li>
+  </ul>
+</div>
+
+<!-- 質問19 -->
+<div id="q_19" style="display: none;">
+  <p>問１９：あなたの目指すものは？</p>
+  <ul>
+    <li><a class="btn" href="#q_20" data-value="e">誰も知らないことを知っている  </a></li>
+    <li><a class="btn" href="#q_20" data-value="a">誰も持っていないものを持っている</a></li>
+  </ul>
+</div>
+
+<!-- 質問20 -->
+<div id="q_20" style="display: none;">
+  <p>問２０：どちらをしたい</p>
+  <ul>
+    <li><a class="btn" href="#q_21" data-value="e">誰も解けない謎を解く</a></li>
+    <li><a class="btn" href="#q_21" data-value="a">誰よりも早く経験値を得る</a></li>
+  </ul>
+</div>
+
+<!-- 質問21 -->
+<div id="q_21" style="display: none;">
+  <p>問２１：オンラインゲームではどんなチームに所属したい？</p>
+  <ul>
+    <li><a class="btn" href="#q_22" data-value="e">探索専門チーム </a></li>
+    <li><a class="btn" href="#q_22" data-value="k">対人戦を行うチーム </a></li>
+  </ul>
+</div>
+
+<!-- 質問22 -->
+<div id="q_22" style="display: none;">
+  <p>問２２：どちらで勝ちたい？</p>
+  <ul>
+    <li><a class="btn" href="#q_23" data-value="e">知識を競い合う競技</a></li>
+    <li><a class="btn" href="#q_23" data-value="k">プレイヤー同士のアリーナバトル</a></li>
+  </ul>
+</div>
+<!-- 質問23 -->
+<div id="q_23" style="display: none;">
+  <p>問２３：広いエリアにひとりで居る場合に、どう思いますか？</p>
+  <ul>
+    <li><a class="btn" href="#q_24" data-value="e">安全に探索できる</a></li>
+    <li><a class="btn" href="#q_24" data-value="k">戦えそうな相手を探す</a></li>
+  </ul>
+</div>
+
+<!-- 質問24 -->
+<div id="q_24" style="display: none;">
+  <p>問２４：他のプレイヤーがあなたを標的にしてきた。どうしますか？</p>
+  <ul>
+    <li><a class="btn" href="#q_25" data-value="e">安全な場所に逃げて隠れる   </a></li>
+    <li><a class="btn" href="#q_25" data-value="k">やられる前にやる</a></li>
+  </ul>
+</div>
+
+<!-- 質問25 -->
+<div id="q_25" style="display: none;">
+  <p>問２５：新しいプレイヤーに出会った。何が気になりますか？</p>
+  <ul>
+    <li><a class="btn" href="#q_26" data-value="e">なにか知識を持っているだろうか、または自分の知識が必要だろうか</a></li>
+    <li><a class="btn" href="#q_26" data-value="k">強い相手だろうか、または強い相手になりうるだろうか</a></li>
+  </ul>
+</div>
+
+<!-- 質問26 -->
+<div id="q_26" style="display: none;">
+  <p>問２６：ゲームでは、どちらかといえばあなたはどんなプレイヤーですか？</p>
+  <ul>
+    <li><a class="btn" href="#q_27" data-value="a">より強い装備を追い求めるプレイヤー </a></li>
+    <li><a class="btn" href="#q_27" data-value="k">対人戦に強いプレイヤー </a></li>
+  </ul>
+</div>
+
+<!-- 質問27 -->
+<div id="q_27" style="display: none;">
+  <p>問２７：オンラインゲームで自慢するのは？</p>
+  <ul>
+    <li><a class="btn" href="#q_28" data-value="k">倒したプレイヤーの数</a></li>
+    <li><a class="btn" href="#q_28" data-value="a">装備や称号の質や量</a></li>
+  </ul>
+</div>
+<!-- 質問28 -->
+<div id="q_28" style="display: none;">
+  <p>問２８：ゲームで高めたい能力は？</p>
+  <ul>
+    <li><a class="btn" href="#q_29" data-value="k">FPSなどの対人ゲームで相手を圧倒できる能力</a></li>
+    <li><a class="btn" href="#q_29" data-value="a">自分の経験となったり技能を学べる能力</a></li>
+  </ul>
+</div>
+
+<!-- 質問29 -->
+<div id="q_29" style="display: none;">
+  <p>問２９：クエスト（ゲームで与えられるタスク）の報酬で好きなのは</p>
+  <ul>
+    <li><a class="btn" href="#q_30" data-value="a">多くの経験値や特殊な称号   </a></li>
+    <li><a class="btn" href="#q_30" data-value="k">対人戦闘で役立つアイテム</a></li>
+  </ul>
+</div>
+
+<!-- 質問30 -->
+<div id="q_30" style="display: none;">
+  <p>問３０：テレビゲームをしていてより楽しいのはどちらですか？</p>
+  <ul>
+    <li><a class="btn end"  data-value="a">ハイスコアを更新していくこと</a></li>
+    <li><a class="btn end"  data-value="k">友人との１対１の戦いで勝つこと</a></li>
+  </ul>
+</div>
+
+      <!-- 回答の答え -->
+     <div id="answer_01" class="re
+     sult" style="display: none;">
+      <div class="result_theme ">
+            <p>お疲れ様でした。<br>あなたのバートルテストの結果は</p>
+      </div>
+      <div class="result_1">
+        <h4>結果は</h4>
+      </div>
+      <div class="result_discription">
+      </div>
+       <div class="return-btn">
+        <a class="return" href="Testform.html">もどる</a>
+       </div>
+     </div>
+</div>
+      </table>
+    </form>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

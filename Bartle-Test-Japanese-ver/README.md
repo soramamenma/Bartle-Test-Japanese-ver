@@ -1,0 +1,1 @@
+"# Bartle-Test-Japanese-ver" 

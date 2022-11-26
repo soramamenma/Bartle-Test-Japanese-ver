@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+
+/*全端末（PC・タブレット・スマホ）共通設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+	color: #666;	/*全体の文字色*/
+	margin: 0px;
+	padding: 0px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka,
+	 "ＭＳ Ｐゴシック", "MS PGothic", sans-serif-apple-system, BlinkMacSystemFont, "Helvetica Neue",
+	  "Segoe UI", "Yu Gothic", YuGothic, sans-serif;	/*フォント種類*/
+	font-size: 15px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #ededed;	/*背景色*/
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+iframe {width: 100%;}
+
+/*リンク（全般）設定
+---------------------------------------------------------------------------*/
+a {
+	color: #666;	/*リンクテキストの色*/
+	transition: 0.5s;	/*マウスオン時の移り変わるまでの時間設定。0.5秒。*/
+}
+a:hover {
+	color: #179dce;			/*マウスオン時の文字色（全体）*/
+	text-decoration: none;	/*マウスオン時に下線を消す設定。残したいならこの１行削除。*/
+}
+
+/*コンテナー（HPを囲むブロック）
+---------------------------------------------------------------------------*/
+#container {
+	max-width: 1200px;	/*サイトの最大幅*/
+	margin: 0 auto;
+	padding: 0 3%;	/*上下、左右へのボックス内の余白。*/
+}
+
+/*ヘッダー（ロゴが入ったブロック）
+---------------------------------------------------------------------------*/
+header {
+	padding: 30px 3%;
+}
+/*ロゴ画像*/
+header #logo img {
+	width: 600px;	/*画像幅*/
+}
+/*-質問フォームの設定
+-*/
+.example{
+	width: 980px;
+	height: auto;
+	margin: auto;
+	text-align: justify;
+text-justify: inter-ideograph; /*for IE*/
+padding : 20px ;
+	border: 5px solid #333;
+	border-radius: 20px;
+	background: #e3f5ff;
+}
+
+.choose_box {
+	position: relative;
+	width: 100%;
+  }
+   .choose_box p {
+	margin-top: 5%;
+	margin-bottom: 10%;
+	  font-size: 20px;
+	  display: block;
+	  font-weight: 600;
+	  text-align: center;
+	}
+  
+  .choose_box li {
+	display: inline-block;
+	width: 80%;
+	margin-top: 30px;
+	list-style: none;
+  }
+  
+  ul {
+	margin-left: 10%;
+	padding-left: 0;
+  }
+  
+  
+  
+  .choose_box ul li a {
+	width: 100%;
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+	text-align: center;
+	background-color: #2791d4;
+	font-weight: 600;
+	font-size: 16px;
+	border: 2px solid #2791d4;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+  }
+  
+  .choose_box ul li a:hover {
+	 background-color: #fff;
+	color: #2791d4;
+	  -webkit-transition: 0.7s;
+	  -moz-transition: 0.7s;
+	  -o-transition: 0.7s;
+	  transition: 0.7s;
+  }
+  
+  .app-theme p {
+	color: #2791d4;
+	margin-bottom: 5%;
+	margin-top: 5%;
+  }
+  
+  
+  .fit {
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	width: 100%;
+  }
+  
+  .fit p {
+	margin-top: 5%;
+	margin-bottom: 10%;
+	  font-size: 18px;
+	  display: block;
+	  font-weight: 600;
+	  text-align: center;
+	}
+  
+  
+  
+  
+  .result_0 h4 {
+	  width: 50%;
+	  margin: auto;
+	  padding: 20px;
+	  text-align: center;
+	  font-size: 24px;
+	  font-weight: 600;
+	  color: #fff;
+	  text-align: center;
+	background-color: #10c010;
+	}
+  
+  .result_1 h4 {
+	  width: 50%;
+	  height: auto;
+	  margin: auto;
+	  padding: 20px;
+	  text-align: center;
+	  font-size: 24px;
+	  font-weight: 600;
+	  color: #fff;
+	  text-align: center;
+	background-color: #DC143C;
+	}
+  
+  
+  
+  .result_theme p  {
+	  margin-top: 5%;
+	  margin-bottom: 2%;
+	  text-align: center;
+  }
+  
+  /*説明文を入れる場合の見た目設定*/
+  .result_discription0 {
+	  text-align: center;
+	  margin-bottom: 5%;
+  }
+  .result_discription1 {
+	  text-align: center;
+	  margin-bottom: 5%;
+  }
+  .result_discription0 h2 {
+	  color: #10c010;
+	  text-align: center;
+  }
+  
+  .result_discription1 h2 {
+	  color: #DC143C;
+	  text-align: center;
+  }
+  
+  
+	.result_discription0 p {
+	  font-family: "游ゴシック体", YuGothic;
+	  margin-left: 15%;
+	  margin-right: 15%;
+	  width: 70%;
+	  padding: 20px;
+	  text-align: left;
+	  border: 1px solid #10c010;
+	  color: #303030;
+	  font-size: 16px;
+	  line-height: 35px;
+	  box-shadow: 0px 5px 1px #10c010;
+	  border-radius: 5px;
+	}
+	.result_discription1 p {
+	  font-family: "游ゴシック体", YuGothic;
+	  margin-left: 20%;
+	  margin-right: 20%;
+	  width: 60%;
+	  padding: 20px;
+	  text-align: left;
+	  border: 1px solid #DC143C;
+	  color: #303030;
+	  font-size: 16px;
+	  line-height: 35px;
+	  box-shadow: 0px 5px 1px #DC143C;
+	  border-radius: 5px;
+	}
+  
+  .return-btn {
+	margin-top: 5%;
+	  margin-left: 35%;
+	  margin-right: 35%;
+	  width: 30%;
+	  margin-bottom: 100px;
+  }
+  .return {
+	display: inline-block;
+	text-align: center;
+	  text-decoration: none;
+	  color: #fff;
+	  background-color: #2791d4;
+	  width: 100%;
+	  padding: 10px 10px;
+	  border: 1px solid #2791d4 ;
+  }
+  
+  .return:hover {
+	  border: 1px solid #2791d4 ;
+	  background-color: #fff;
+	  color: #2791d4;
+	  transition: 0.5s;
+  }
+  
+  
+  
+  
